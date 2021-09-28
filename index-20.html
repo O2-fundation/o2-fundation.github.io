@@ -508,46 +508,7 @@ call_to_action:
     </div>
     <!--/.row -->
     {% endif %}
-    {% if page.three_columns_area.enable %}
-    <div class="three-columns-area"> 
-    <div class="space100"></div>
-    <div class="row gutter-40">
-      {% assign column_one = page.three_columns_area.first_column %}
-      <div class="col-lg-4">
-        {% if column_one.title %}
-         <h4>{{column_one.title}}</h4>
-        {% endif %}
-        {% if column_one.description %}
-         <p>{{column_one.description}}</p>
-        {% endif %}
-        <ul class="progress-list">
-          {% for skills in column_one.skills %}
-          <li>
-            <p>{{skills.title}}</p>
-            <div class="progressbar line {{skills.color}}" data-value="{{skills.progress_amount}}"></div>
-          </li>
-          {% endfor %}
-        </ul>
-        <!-- /.progress-list -->
-      </div>
-      <!--/column -->
-      <div class="space30 d-none d-md-block d-lg-none"></div>
-      {% assign second_one = page.three_columns_area.second_column %}
-      <div class="col-lg-4">
-        {% if second_one.title %}
-         <h4>{{second_one.title}}</h4>
-        {% endif %}
-        {% for paragraph in second_one.paragraphs %}
-         <p>{{paragraph.text}}</p>
-        {% endfor %}
-        {% if second_one.lists %}
-        <ul class="unordered-list">
-          {% for list in second_one.lists %}
-           <li>{{list}}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
+    
       <!--/column -->
       <div class="space30 d-none d-md-block d-lg-none"></div>
       {% assign third_one = page.three_columns_area.third_column %}
@@ -585,7 +546,7 @@ call_to_action:
           {% endfor %}
          {% endif %}
       </div>
-      <!--/column -->
+      /column
 
     </div>
     <!--/.row -->
