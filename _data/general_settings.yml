@@ -109,11 +109,12 @@ author_page_header:
 
 gallery:
   images:
-  - img: "/assets/images/art/z1.svg"
-  - img: "/assets/images/art/z2.svg"
-  - img: "/assets/images/art/z3.svg"
-  - img: "/assets/images/art/z4.svg"
-  - img: "/assets/images/art/z5.svg"
-  - img: "/assets/images/art/z6.svg"
-  - img: "/assets/images/art/z7.svg"
-  - img: "/assets/images/art/z8.svg"
+  - img: "/assets/images/art/z1.jpeg"
+  - img: "/assets/images/art/z2.jpeg"
+  - img: "/assets/images/art/z3.jpeg"
+  - img: "/assets/images/art/z4.png"
+  - img: "/assets/images/art/z1.jpeg"
+  - img: "/assets/images/art/z2.jpeg"
+  - img: "/assets/images/art/z3.jpeg"
+  - img: "/assets/images/art/z4.png"
+  
