@@ -509,55 +509,6 @@ call_to_action:
     <!--/.row -->
     {% endif %}
     
-      <!--/column -->
-      <div class="space30 d-none d-md-block d-lg-none"></div>
-      {% assign third_one = page.three_columns_area.third_column %}
-      <div class="col-lg-4">
-        {% if third_one.title %}
-         <h4>{{third_one.title}}</h4>
-        {% endif %}
-        {% if third_one.description %}
-         <p>{{third_one.description}}</p>
-        {% endif %}
-        <div class="newsletter-wrapper">
-          <form action="https://formsubmit.io/send/{{third_one.sunscribe_form_action_email}}">
-            <div class="input-group">
-              <input type="email"  name="user_email" class="user_email form-control mb-0 mr-2 mb-sm-0" placeholder="Email Address" required>
-              <button type="submit" name="subscribe" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">{{third_one.button_text}}</button>
-              <div class="clearfix"></div>
-            </div>
-          </form>
-        </div>
-        <!-- /.newsletter-wrapper -->
-        <div class="space40"></div>
-        {% if third_one.contact_info.title %}
-         <h4>{{third_one.contact_info.title}}</h4>
-        {% endif %}
-        {% if third_one.contact_info.address_one %}
-         <address>{{third_one.contact_info.address_one}}</address>
-        {% endif %}
-         {% if third_one.contact_info.address_two %}
-          {% for contact_data in third_one.contact_info.address_two %}
-            {% if contact_data.email %}
-             <a href="mailto:{{contact_data.email}}" class="nocolor">{{contact_data.email}}</a>
-             {% else %}
-             <p>{{contact_data}}</p>
-            {% endif %}
-          {% endfor %}
-         {% endif %}
-      </div>
-      /column
-
-    </div>
-    <!--/.row -->
-    </div>
-    {% endif %}
-    </div>
-    <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 20.98">
-        <path d="M0,0V21H1070V0A6830.24,6830.24,0,0,1,0,0Z" /></svg></div>
-  </div>
-  <div class="wrapper light-wrapper">
-    <div class="container inner">
 {% if page.testimonials.enable %}
 <div class="testimonials-area">
   <div class="row">
