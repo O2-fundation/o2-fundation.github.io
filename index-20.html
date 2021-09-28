@@ -678,7 +678,12 @@ call_to_action:
 {% include clients_carousel.html %}
 {% endif %}
 
-{% if pricing_data.enable %}
+{% if page.pricing_table.enable %}
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="space20"></div>
+    {% assign pricing_data = page.pricing_table %}
+    {% if pricing_data.enable %}
     <div class="row">
         <div class="col-lg-5 pr-50 pr-md-15">
             <h2 class="title-color color-gray">{{pricing_data.title}}</h2>
@@ -723,7 +728,54 @@ call_to_action:
         </div>
     </div>
     {% endif %}
-    
+    <div class="space140"></div>
+    {% if page.faq_area.enable %}
+    <div class="row">
+        {% if page.faq_area.image %}
+        <div class="col-lg-6">
+            <figure>
+                <img src="{{page.faq_area.image}}" alt="{{page.faq_area.title}}" />
+            </figure>
+        </div>
+        {% endif %}
+        <div class="space50 d-none d-md-block d-lg-none"></div>
+        <div class="space10 d-md-none"></div>
+        <div class="col-lg-6 pl-60 pl-md-15">
+            <h2 class="title-bg bg-default color-default">{{page.faq_area.title}}</h2>
+            <div class="space10"></div>
+            <h3 class="display-3">{{page.faq_area.sub_title}}</h3>
+            <div class="space20"></div>
+            <div id="accordion-2" class="accordion-wrapper simple">
+                {% for tab in page.faq_area.tabs %}
+                <div class="card">
+                    <div class="card-header" id="accordion-heading-2-1">
+                        <h5>
+                            <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-{{forloop.index}}" aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                                {{tab.question}}
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="accordion-collapse-2-{{forloop.index}}" class="collapse" aria-labelledby="accordion-heading-2-{{forloop.index}}" data-target="#accordion-2" data-parent="#accordion-2">
+                        <div class="card-body">
+                            <p>
+                                {{tab.answer}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <!-- /.accordion-wrapper -->
+        </div>
+    </div>
+    {% endif %}
+
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endif %}
+
 {% if page.blogs_area.enable %}
 <div class="wrapper white-wrapper">
   <div class="container inner">
