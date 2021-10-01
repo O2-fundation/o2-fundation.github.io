@@ -159,7 +159,7 @@ main_menu:
     url: "/"
     submenu:
 
-      - text: "Portfolio "
+      - text: "Team "
         url: "/portfolio/"
 
       - text: "Contact"
@@ -187,7 +187,7 @@ main_menu:
       - text: "service 04"
         url: "/services/index-4"
 
-  - text: "Portfolio"
+  - text: "Team"
     url: "/portfolios/"
     submenu:
       - text: "Portfolio 02"
