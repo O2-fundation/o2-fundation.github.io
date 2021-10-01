@@ -120,8 +120,8 @@ main_menu:
       - text: "About Page"
         url: "/about"
 
-      - text: "Portfolio"
-        url: "/portfolios/"
+      - text: "team"
+        url: "/teams/"
 
       - text: "Contact"
         url: "/contact"
@@ -143,8 +143,8 @@ main_menu:
 
     submenu:
 
-      - text: "Portfolio "
-        url: "/portfolio"
+      - text: "Team "
+        url: "/team"
 
       - text: "Contact"
         url: "/contact"
@@ -160,7 +160,7 @@ main_menu:
     submenu:
 
       - text: "Team "
-        url: "/portfolio/"
+        url: "/team/"
 
       - text: "Contact"
         url: "/contact"
@@ -188,25 +188,25 @@ main_menu:
         url: "/services/index-4"
 
   - text: "Team"
-    url: "/portfolios/"
+    url: "/teams/"
     submenu:
-      - text: "Portfolio 02"
-        url: "/portfolios/index-2"
+      - text: "team 02"
+        url: "/teams/index-2"
 
-      - text: "Portfolio 03"
-        url: "/portfolios/index-3"
+      - text: "team 03"
+        url: "/teams/index-3"
 
-      - text: "Portfolio 04"
-        url: "/portfolios/index-4"
+      - text: "team 04"
+        url: "/teams/index-4"
 
-      - text: "Portfolio 05"
-        url: "/portfolios/index-5"
+      - text: "team 05"
+        url: "/teams/index-5"
 
-      - text: "Portfolio 06"
-        url: "/portfolios/index-6"
+      - text: "team 06"
+        url: "/teams/index-6"
 
-      - text: "Portfolio 07"
-        url: "/portfolios/index-7"
+      - text: "team 07"
+        url: "/teams/index-7"
 
   - text: "Blog"
     url: "/"
